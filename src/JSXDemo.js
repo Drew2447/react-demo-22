@@ -68,10 +68,13 @@ function JSXDemo() {
       <h3>render array of Objects</h3>
       {renderArrayOfObject()}
       <hr />
-      <h3>Teranry/short hand with booleans</h3>
-      <p> {num} is {num % 2== 0 ? 'even': 'odd'}</p>
-      {num %2 === 0 ?<p> even</p> : <p> hide</p>}
-      {}
+      <h3>Ternary/short hands with booleans</h3>
+      <p>{num} is {num % 2 ===0 ? 'even':'odd'}</p>
+      {num % 2 === 0 ? <p>even</p> : <p>odd</p> }
+      {true ? <p>show</p> : <p>hide</p> }
+      {true && <p>showing thing</p> }
+      {false && <p>Won't show</p> }
+      {false || <p>Will show</p> }
     </div>
   );
 }
